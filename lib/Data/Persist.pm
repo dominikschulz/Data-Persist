@@ -116,18 +116,18 @@ Data::Persist - an easy-to-use data-to-disk dumper
 
 =method write
 
-Takes two arguments: an data structure and an filename.
+Takes a single, positional argument: a data structure.
 
-Serializes that data structure and writes to the given filename.
+Serializes that data structure and writes to the filename in the constructor.
 
 =method read
 
-Takes one argument: an filename to read from.
+Takes no arguments.
 
-Unserializes this data structure and returns it.
+Unserializes the filename in the constructure and returns it.
 
-=method BUILD
+=method new
 
-Make sure given filename is accessible.
+Two named arguments: a filename and an instance of Log::Tree.
 
 =cut
