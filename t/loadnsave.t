@@ -19,13 +19,13 @@ my $in = {
     'array' => [qw(this is an array)],
     'hash' => {
         'this' => 'is',
-        'an' => 'hash',
+        'a' => 'hash',
     },
 };
 
 ok($dp->write($in),'Data written');
 my $out;
 ok($out = $dp->read(),'Data read');
-is_deeply($in,$out,'Written data is depply read data');
+is_deeply($in,$out,'Written data is_deeply read data');
 ok(!$dp->read($tmpfile->filename().'.NOTEXISTING'),'Undef returned on non existing file');
 
