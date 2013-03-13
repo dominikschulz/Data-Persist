@@ -124,7 +124,7 @@ Serializes that data structure and writes to the filename in the constructor.
 
 Takes no arguments.
 
-Unserializes the filename in the constructure and returns it.
+Unserializes the filename in the constructor and returns it.
 
 =method new
 
